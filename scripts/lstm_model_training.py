@@ -57,7 +57,7 @@ print("Normalização concluída. Primeiros valores normalizados:")
 print(df['Scaled_Price'].head())
 
 # Salvando o scaler para recuperar na API de previsão
-joblib.dump(scaler, 'scaler.pkl')
+joblib.dump(scaler, 'models/scaler.pkl')
 
 # Função para criação das sequências que serão usadas com base no time_Step escolhido
 def create_sequences(data, time_steps):
@@ -173,4 +173,4 @@ plt.title('Análise de Overfitting')
 plt.show()
 
 # Salvar o modelo para ser utilizado na API junto com o scaler
-model.save('lstm_stock_model.keras')
+model.save('models/lstm_stock_model.keras')
