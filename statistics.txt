@@ -1,0 +1,14 @@
+Estatísticas das Variações Reais:
+Média: 0.05
+Desvio Padrão: 1.66
+Variação Mínima: -8.99
+Variação Máxima: 10.81
+
+Estatísticas das Variações Previstas:
+Média: 0.04
+Desvio Padrão: 0.90
+Variação Mínima: -5.96
+Variação Máxima: 3.87
+MAE: 1.359756072998047
+RMSE: 1.8959204727398848
+MAPE: 1.02
