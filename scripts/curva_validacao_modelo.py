@@ -19,7 +19,7 @@ df.reset_index(drop=True, inplace=True)
 scaler = MinMaxScaler(feature_range=(0, 1))
 df['Scaled_Price'] = scaler.fit_transform(df[['Price']])
 
-model = load_model('lstm_stock_model.keras')
+model = load_model('models/lstm_stock_model.keras')
 
 time_steps = 75 
 dados_finais = df['Scaled_Price'].values[-(time_steps + 50):-50].reshape(1, time_steps, 1)
