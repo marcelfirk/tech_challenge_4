@@ -9,7 +9,7 @@ import tracemalloc
 
 # Configuração do logging
 logging.basicConfig(
-    filename='model_monitoring.log',
+    filename='logs/model_monitoring.log',
     level=logging.INFO,
     format='%(asctime)s - %(message)s'
 )
@@ -17,8 +17,8 @@ logging.basicConfig(
 app = FastAPI()
 
 # Carregar o arquivo do modelo e o scaler utilizado no treinamento
-model = tf.keras.models.load_model('lstm_stock_model.h5')
-scaler = joblib.load('scaler.pkl')
+model = tf.keras.models.load_model('models/lstm_stock_model.h5')
+scaler = joblib.load('models/scaler.pkl')
 
 # Time steps utilizados no treinamento
 time_steps = 75
